@@ -27,4 +27,3 @@ export const crearEstudiante = (nombre, ...notas) => {
         console.error(`Error en registro: ${error.message}`);
     }
 };
-
