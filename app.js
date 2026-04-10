@@ -5,6 +5,7 @@ import { registrarActividad } from "./apropiacion/ejercicio3.js";
 
 // transferencia
 import { crearEstudiante } from "./transferencia/ejercicio1.js";
+import { fusionarCatalogos } from "./transferencia/ejercicio2.js";
 
 // apropiacion
 
@@ -15,3 +16,14 @@ registrarActividad({ nombre: "Mantenimiento", fecha: "2026-04-15" });
 
 // transferencia
 console.log(crearEstudiante("Luis", 85, 90, 90, 90));
+
+const catalogoA = [
+  { id: 1, nombre: "Curso JavaScript", precio: 40 },
+  { id: 2, nombre: "Curso HTML", precio: 35 }
+];
+const catalogoB = [
+  { id: 3, nombre: "Curso CSS", precio: 30 }
+];
+
+const catalogoFinal = fusionarCatalogos(catalogoA, catalogoB);
+console.log(catalogoFinal);
