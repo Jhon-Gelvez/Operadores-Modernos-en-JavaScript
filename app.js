@@ -2,6 +2,9 @@
 import { procesarPedido } from "./apropiacion/ejercicio1.js";
 import { agregarInventario } from "./apropiacion/ejercicio2.js";
 import { registrarActividad } from "./apropiacion/ejercicio3.js";
+import { evaluar } from './apropiacion/ejercicio7.js';
+
+
 
 // transferencia
 import { crearEstudiante } from "./transferencia/ejercicio1.js";
@@ -13,6 +16,10 @@ console.log(procesarPedido({ cliente: "Ana", producto: "Laptop", cantidad: 1 }, 
 const inventario = ["cámara", "trípode", "micrófono"];
 console.log(agregarInventario(inventario, "Lente 50mm"));
 registrarActividad({ nombre: "Mantenimiento", fecha: "2026-04-15" });
+const res1 = evaluar(10, 20, 30);
+console.log("Resultado Exitoso:", res1);
+const res2 = evaluar(10, "error", 30);
+console.log("Resultado Fallido:", res2);
 
 // transferencia
 console.log(crearEstudiante("Luis", 85, 90, 90, 90));
