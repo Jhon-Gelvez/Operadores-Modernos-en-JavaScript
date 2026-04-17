@@ -6,7 +6,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
 | Jhon Jairo Gelvez Gomez | Líder (Arquitecto) | `Jhon-Gelvez` |
-| [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
+| Jesus David Zabala Grateron | Desarrollador | `DAV1D-17` |
 | Jhon Sebastian Falcon Ruiz | Desarrollador | `falconsebas23-prog` |
 
 ## 2. Canales de Comunicación
