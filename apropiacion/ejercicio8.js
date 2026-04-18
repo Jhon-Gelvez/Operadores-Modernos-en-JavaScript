@@ -16,3 +16,4 @@ export const fusionarColecciones = (lista1, lista2) => {
     return `[Error Ejercicio 8]: ${error}`;
   }
 };
+
