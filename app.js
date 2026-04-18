@@ -3,7 +3,7 @@ import { procesarPedido } from "./apropiacion/ejercicio1.js";
 import { agregarInventario } from "./apropiacion/ejercicio2.js";
 import { registrarActividad } from "./apropiacion/ejercicio3.js";
 import { evaluar } from './apropiacion/ejercicio7.js';
-
+import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 
 
 // transferencia
@@ -16,10 +16,25 @@ console.log(procesarPedido({ cliente: "Ana", producto: "Laptop", cantidad: 1 }, 
 const inventario = ["cámara", "trípode", "micrófono"];
 console.log(agregarInventario(inventario, "Lente 50mm"));
 registrarActividad({ nombre: "Mantenimiento", fecha: "2026-04-15" });
+
+
+
+
+
+
+
+
+
 const res1 = evaluar(10, 20, 30);
 console.log("Resultado Exitoso:", res1);
 const res2 = evaluar(10, "error", 30);
 console.log("Resultado Fallido:", res2);
+const listaA = [10, 20, 30];
+const listaB = ["A", "B", "C"];
+const resultadoExitoso = fusionarColecciones(listaA, listaB);
+console.log("Resultado Exitoso:", resultadoExitoso);
+const resultadoError = fusionarColecciones([1, 2], 500);
+console.log("Resultado con Error:", resultadoError);
 
 // transferencia
 console.log(crearEstudiante("Luis", 85, 90, 90, 90));

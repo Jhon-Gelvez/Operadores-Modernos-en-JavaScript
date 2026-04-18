@@ -5,7 +5,7 @@ export const evaluar = (...valores) => {
       throw "Todos los argumentos deben ser números válidos";
     }
 
-    // Spread para crear nueva lista (inmutabilidad)
+    // Spread para crear nueva lista 
     const datos = [...valores];
     
     // Cálculo del promedio
@@ -15,3 +15,4 @@ export const evaluar = (...valores) => {
     return `[Error Ejercicio 7]: ${error}`;
   }
 };
+
