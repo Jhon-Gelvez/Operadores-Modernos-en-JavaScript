@@ -4,6 +4,7 @@ import { agregarInventario } from "./apropiacion/ejercicio2.js";
 import { registrarActividad } from "./apropiacion/ejercicio3.js";
 import { configurarUsuario } from "./apropiacion/ejercicio4.js";
 import { actualizarPerfil } from "./apropiacion/ejercicio5.js";
+import { analizarVentas } from "./apropiacion/ejercicio6.js";
 import { evaluar } from "./apropiacion/ejercicio7.js";
 import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 
@@ -34,6 +35,13 @@ const resultado = actualizarPerfil(
     { edad: 22 },
     { ciudad: "Medellín" }
 );
+console.log(resultado);
+// ejercicio #6
+const ventas = [
+    { producto: "teclado", detalles: { precio: 50, unidades: 3 } },
+    { producto: "mouse", detalles: { precio: 20, unidades: 5 } }
+];
+const resultado = analizarVentas(ventas);
 console.log(resultado);
 // ejercicio #7
 const res1 = evaluar(10, 20, 30);
