@@ -3,6 +3,7 @@ import { procesarPedido } from "./apropiacion/ejercicio1.js";
 import { agregarInventario } from "./apropiacion/ejercicio2.js";
 import { registrarActividad } from "./apropiacion/ejercicio3.js";
 import { configurarUsuario } from "./apropiacion/ejercicio4.js";
+import { actualizarPerfil } from "./apropiacion/ejercicio5.js";
 import { evaluar } from "./apropiacion/ejercicio7.js";
 import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 
@@ -22,6 +23,18 @@ const defaults = { tema: "claro", idioma: "es" };
 const personalizadas = { tema: "oscuro", idioma: "en" };
 const resultado = configurarUsuario(defaults, personalizadas);
 console.log(resultado); 
+// ejercicio #5
+const perfil = {
+    nombre: "Sebastian",
+    edad: 20,
+    ciudad: "Bogotá"
+};
+const resultado = actualizarPerfil(
+    perfil,
+    { edad: 22 },
+    { ciudad: "Medellín" }
+);
+console.log(resultado);
 // ejercicio #7
 const res1 = evaluar(10, 20, 30);
 console.log("Resultado Exitoso:", res1);
