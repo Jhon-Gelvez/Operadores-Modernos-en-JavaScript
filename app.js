@@ -17,7 +17,11 @@ console.log(procesarPedido({ cliente: "Ana", producto: "Laptop", cantidad: 1 }, 
 const inventario = ["cámara", "trípode", "micrófono"];
 console.log(agregarInventario(inventario, "Lente 50mm"));
 registrarActividad({ nombre: "Mantenimiento", fecha: "2026-04-15" });
-
+// ejercicio #4
+const defaults = { tema: "claro", idioma: "es" };
+const personalizadas = { tema: "oscuro", idioma: "en" };
+const resultado = configurarUsuario(defaults, personalizadas);
+console.log(resultado); 
 // ejercicio #7
 const res1 = evaluar(10, 20, 30);
 console.log("Resultado Exitoso:", res1);
