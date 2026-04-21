@@ -2,6 +2,7 @@
 import { procesarPedido } from "./apropiacion/ejercicio1.js";
 import { agregarInventario } from "./apropiacion/ejercicio2.js";
 import { registrarActividad } from "./apropiacion/ejercicio3.js";
+import { configurarUsuario } from "./apropiacion/ejercicio4.js";
 import { evaluar } from "./apropiacion/ejercicio7.js";
 import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 
