@@ -12,6 +12,7 @@ import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 import { crearEstudiante } from "./transferencia/ejercicio1.js";
 import { fusionarCatalogos } from "./transferencia/ejercicio2.js";
 import { procesarCompra } from "./transferencia/ejercicio3.js";
+import {  estadisticas } from "./transferencia/ejercicio4.js";
 import { configFinal } from "./transferencia/ejercicio5.js";
 
 // apropiacion
@@ -78,6 +79,13 @@ const productos = [
     { nombre: "mouse", precio: 20 }
 ];
 const resultado = procesarCompra(cliente, productos);
+console.log(resultado);
+// ejrcicio #4
+const jugadores = [
+    { nombre: "Ana", stats: { puntos: 20, asistencias: 5 } },
+    { nombre: "Luis", stats: { puntos: 15, asistencias: 7 } }
+];
+const resultado = estadisticas(jugadores);
 console.log(resultado);
 //**ejercicio #5 */
 const baseConfig = { modo: "producción", lenguaje: "es", nivel: 1 };
