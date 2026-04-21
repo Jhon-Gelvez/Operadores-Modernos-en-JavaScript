@@ -11,6 +11,7 @@ import { fusionarColecciones } from "./apropiacion/ejercicio8.js";
 // transferencia
 import { crearEstudiante } from "./transferencia/ejercicio1.js";
 import { fusionarCatalogos } from "./transferencia/ejercicio2.js";
+import { procesarCompra } from "./transferencia/ejercicio3.js";
 import { configFinal } from "./transferencia/ejercicio5.js";
 
 // apropiacion
@@ -67,7 +68,17 @@ const catalogoB = [{ id: 3, nombre: "Curso CSS", precio: 30 }];
 
 const catalogoFinal = fusionarCatalogos(catalogoA, catalogoB);
 console.log(catalogoFinal);
-
+//ejercicio #3
+const cliente = {
+    nombre: "Sebastian",
+    correo: "sebas@gmail.com"
+};
+const productos = [
+    { nombre: "teclado", precio: 50 },
+    { nombre: "mouse", precio: 20 }
+];
+const resultado = procesarCompra(cliente, productos);
+console.log(resultado);
 //**ejercicio #5 */
 const baseConfig = { modo: "producción", lenguaje: "es", nivel: 1 };
 const extraConfig = { nivel: 2, tema: "oscuro" };
